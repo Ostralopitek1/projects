@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<fr>
+    <mission>
+        <scene id="0">
+            <replique name="didascalie">Mary attend son père, le patron d’une importante chaine de télé. Alors qu’elle patiente tranquillement dans sa voiture, une camionnette débarque sur le parking. Soudain, des hommes armés sortent du véhicule et s’en prennent à Mary. A ce même moment, John, un automobiliste arrive sur le parking et voit la scène. S’en suit alors une poursuite afin de venir en aide à Mary</replique>
+            <replique name="Malcom">Malcom : Rentre dans cette voiture !!!</replique>
+            <replique name="Mary">Mary : Non hors de questions !</replique>
+            <replique name="Bryan">Bryan : Montes ou je tire !!!</replique>
+            <replique name="didascalie">Mary monte dans la voiture.</replique>
+            <replique name="didascalie">John aperçoit la scène et court vers la voiture pour intervenir.</replique>
+            <replique name="John">John : Lâchez-la !!!</replique>
+            <replique name="didascalie">Mais trop tard la voiture est partie.</replique>
+            <replique name="didascalie">John court vers sa voiture et poursuit les malfrats.</replique>
+        </scene>
+        <scene id="1">
+            <replique name="didascalie">John fouille les environs et retrouve le véhicule à quelques centaines de mètres mais les occupants ne sont plus là. John découvre une carte d'adhésion du port. John décida donc de s’y rendre.</replique>
+        </scene>
+        <scene id="2">
+            <replique name="didascalie">John arrive au port et décide d’inspecter les environs à la recherche de toutes traces des suspects. Soudain entre deux conteneur, il aperçoit la silhouette de l’un des malfrats.</replique>
+            <replique name="John">John : Eh toi viens ici !!!</replique>
+            <replique name="didascalie">Le malfrat part en courant. John se lance à sa poursuite. Le malfrat se réfugie prêt d'un petit bâtiment. John se doute alors que c’est ici que se trouve la jeune fille et décide donc de lui venir en aide.</replique>
+        </scene>
+        <scene id="3">
+            <replique name="John">John : Relâchez-la !!! Ou je tire !!!</replique>
+            <replique name="Bryan">Bryan : Hors de question !!! Pas tant que nous n'avons pas reçu la rançon de son père.</replique>
+            <replique name="didascalie">John voyant les malfrats de plus en plus menaçant avec leurs armes sort son arme et les tuent. John libère ensuite la jeune femme</replique>
+        </scene>
+        <scene id="4">
+            <replique name="Mary">Mary : Merci d’avoir pris autant de risques pour moi !!! J’ai bien cru que j’allais y rester !</replique>
+            <replique name="John">John : Oh c’est normal vous aviez besoin d’aide, je suis intervenu. Le principal c’est que vous soyez en bonne santé.</replique>
+            <replique name="Mary">Mary : Je vous en suis très reconnaissant. J’aurez toujours une dette envers vous, si je peux faire quoique que ce soit pour vous n’hésitez pas.</replique>
+            <replique name="John">John : Merci, mais je ne fais pas ça pour ça. Souhaitez-vous que je vous ramène chez vous pour que vous soyez vraiment en sécurité ?</replique>
+            <replique name="Mary">Mary : Oui je veux bien si cela ne vous dérange pas.</replique>
+            <replique name="John">John : Bien sûr que non si je vous le propose.</replique>
+            <replique name="didascalie">John et Mary reparte en voiture jusqu’à la maison de Mary</replique>
+        </scene>
+        <scene id="5">
+            <replique name="Jack">Jack : Merci d'avoir ramener ma fille !</replique>
+        </scene>
+    </mission>
+</fr>

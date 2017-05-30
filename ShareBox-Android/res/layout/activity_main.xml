@@ -1,0 +1,108 @@
+<RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="100"
+    android:background="#004a81"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_top">
+
+        <ImageView
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_weight="20"
+            android:src="@drawable/ic_launcher"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="80"
+            android:onClick="wifiDisconnect"
+            android:id="@+id/buttonDisconnect"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50pt"
+        android:id="@+id/wifi1"
+        android:layout_below="@+id/layout_top"
+        android:onClick="wifiConnect"
+        android:text="@string/no_sharebox"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50pt"
+        android:layout_marginTop="2px"
+        android:layout_below="@+id/wifi1"
+        android:id="@+id/wifi2"
+        android:onClick="wifiConnect"
+        android:text="@string/no_sharebox"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50pt"
+        android:layout_marginTop="2px"
+        android:layout_below="@+id/wifi2"
+        android:id="@+id/wifi3"
+        android:onClick="wifiConnect"
+        android:text="@string/no_sharebox"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="userConnect"
+        android:id="@+id/buttonConnect"
+        android:text="@string/connect"
+        android:layout_toLeftOf="@+id/wifiDisable"
+        android:layout_marginTop="850px"/>
+
+    <ImageView
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_below="@+id/wifi3"
+        android:id="@+id/wifiDisable"
+        android:layout_centerHorizontal="true"
+        android:onClick="wifiDisabled"
+        android:src="@drawable/wifi" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btBrowse"
+        android:layout_toRightOf="@+id/wifiDisable"
+        android:layout_marginTop="850px"
+        android:text="@string/browse_files"
+        android:onClick="launchWebviewer"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_weight="20"
+            android:onClick="upload"
+            android:src="@drawable/upload"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="80"
+            android:text="@string/connect_as"
+            android:id="@+id/connected_as"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40px"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

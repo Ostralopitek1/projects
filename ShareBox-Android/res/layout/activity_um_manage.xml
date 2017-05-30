@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#004a81">
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="100"
+        android:background="#004a81">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_top">
+
+            <ImageView
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="20"
+                android:src="@drawable/ic_launcher"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:id="@+id/buttonDisconnect"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/users_list"
+            android:layout_below="@+id/layout_top"
+            android:textSize="10pt"
+            android:layout_marginBottom="5pt"
+            android:id="@+id/TVusers"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textSize="10pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginBottom="5pt"
+            android:layout_below="@+id/TVusers"
+            android:id="@+id/TVUsersList"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#D3290F"
+            android:textSize="10pt"
+            android:visibility="gone"
+            android:layout_below="@+id/TVUsersList"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:id="@+id/TVManageInfo"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVManageInfo"
+            android:textSize="10pt"
+            android:layout_marginBottom="5pt"
+            android:id="@+id/ETusername"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETusername"
+            android:textSize="10pt"
+            android:onClick="onDeleteConfirm"
+            android:text="@string/delete_user"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

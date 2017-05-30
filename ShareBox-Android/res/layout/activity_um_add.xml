@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#004a81">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:background="#004a81">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_top">
+
+            <ImageView
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="20"
+                android:src="@drawable/ic_launcher"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:id="@+id/buttonDisconnect"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="75px"
+            android:layout_below="@+id/layout_top"
+            android:id="@+id/TVTitle"
+            android:text="@string/add_user"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_below="@+id/TVTitle"
+            android:textColor="#D3290F"
+            android:text="@string/login"
+            android:textSize="45px"
+            android:id="@+id/TVAddInfo"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:text="@string/login"
+            android:layout_below="@+id/TVAddInfo"
+            android:textSize="45px"
+            android:id="@+id/tvID"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login"
+            android:inputType="textNoSuggestions"
+            android:textSize="45px"
+            android:layout_below="@+id/tvID"
+            android:layout_gravity="center"
+            android:id="@+id/identifiant"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:textSize="45px"
+            android:gravity="center"
+            android:text="@string/password"
+            android:id="@+id/tvPWD"
+            android:layout_below="@+id/identifiant"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tvPWD"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:id="@+id/password1"
+            android:textSize="45px"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:textSize="45px"
+            android:gravity="center"
+            android:layout_below="@+id/password1"
+            android:text="@string/password"
+            android:id="@+id/tvPWD2"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tvPWD2"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:id="@+id/password2"
+            android:textSize="45px"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:textSize="45px"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/password2"
+            android:text="@string/confirm"
+            android:onClick="onConfirm"
+            android:layout_gravity="center"/>
+
+    </RelativeLayout>
+</ScrollView>
